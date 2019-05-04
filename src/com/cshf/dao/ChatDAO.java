@@ -11,8 +11,6 @@ public class ChatDAO {
         try {
             user.setUid(rs.getInt("uid"));
 
-
-
         } catch (Exception e) {
 
         }
