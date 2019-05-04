@@ -20,6 +20,8 @@ public class User {
 
     private int fid;
 
+    private boolean delFlag;
+
     public int getUid() {
         return uid;
     }
@@ -90,5 +92,13 @@ public class User {
 
     public void setFid(int fid) {
         this.fid = fid;
+    }
+
+    public boolean isDelFlag() {
+        return delFlag;
+    }
+
+    public void setDelFlag(boolean delFlag) {
+        this.delFlag = delFlag;
     }
 }

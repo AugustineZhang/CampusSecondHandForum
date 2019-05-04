@@ -1,26 +1,28 @@
 package com.cshf.dao;
 
+import com.cshf.entity.Chat;
 import com.cshf.entity.User;
 
 import java.sql.ResultSet;
 
 public class ChatDAO {
 
-    private User wrapUserFromResultSet(ResultSet rs) {
-        User user = new User();
+
+
+    private Chat wrapForumFromResultSet(ResultSet rs) {
+        Chat chat = new Chat();
         try {
-            user.setUid(rs.getInt("uid"));
-            user.setUpwd(rs.getString("upwd"));
-            user.setSex(rs.getString("sex"));
-            user.setDept(rs.getString("dept"));
-            user.setTel(rs.getString("tel"));
-            user.setQq(rs.getString("qq"));
-            user.setEmail(rs.getString("email"));
-            user.setUimage(rs.getString("uimage"));
-            user.setFid(rs.getInt("fid"));
+            chat.setCid(rs.getInt("cid"));
+            chat.setSid(rs.getInt("sid"));
+            chat.setSname(rs.getString("sname"));
+            chat.setSimage(rs.getString("simage"));
+            chat.setFid(rs.getInt("fid"));
+            chat.setDelFlag(rs.getBoolean("del_flag"));
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return user;
+        return chat;
     }
+
+
 }

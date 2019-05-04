@@ -16,6 +16,7 @@ public class GoodsDAO {
             goods.setPrice(rs.getBigDecimal("price"));
             goods.setSimage(rs.getString("simage"));
             goods.setFid(rs.getInt("fid"));
+            goods.setDelFlag(rs.getBoolean("del_flag"));
         } catch (Exception e) {
             e.printStackTrace();
         }

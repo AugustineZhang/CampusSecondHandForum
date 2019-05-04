@@ -12,6 +12,8 @@ public class Chat {
 
     private int fid;
 
+    private boolean delFlag;
+
     public int getCid() {
         return cid;
     }
@@ -50,5 +52,13 @@ public class Chat {
 
     public void setFid(int fid) {
         this.fid = fid;
+    }
+
+    public boolean isDelFlag() {
+        return delFlag;
+    }
+
+    public void setDelFlag(boolean delFlag) {
+        this.delFlag = delFlag;
     }
 }

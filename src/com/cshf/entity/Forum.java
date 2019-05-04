@@ -14,6 +14,8 @@ public class Forum {
 
     private String remark;
 
+    private boolean delFlag;
+
     public int getFid() {
         return fid;
     }
@@ -60,5 +62,13 @@ public class Forum {
 
     public void setRemark(String remark) {
         this.remark = remark;
+    }
+
+    public boolean isDelFlag() {
+        return delFlag;
+    }
+
+    public void setDelFlag(boolean delFlag) {
+        this.delFlag = delFlag;
     }
 }

@@ -17,6 +17,7 @@ public class ForumDAO {
             forum.setNewtime(sdf.format(rs.getDate("newtime")));
             forum.setNum(rs.getInt("num"));
             forum.setRemark(rs.getString("tel"));
+            forum.setDelFlag(rs.getBoolean("del_flag"));
         } catch (Exception e) {
             e.printStackTrace();
         }
