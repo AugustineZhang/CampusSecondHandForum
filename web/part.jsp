@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:include page="common.jsp"/>
+
 <html>
 <head>
     <title>贴子</title>
@@ -95,7 +97,7 @@
 </head>
 <body>
 <div id="header">
-    <h2><img src="../bbs/images/logo.jpg" alt="lost" style="vertical-align:middle">
+    <h2><img src="${pageContext.request.contextPath}/images/logo.jpg" alt="lost" style="vertical-align:middle">
         校园二手交易论坛
     </h2>
 </div>

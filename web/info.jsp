@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:include page="common.jsp"/>
 <html>
 <head>
     <title>校园二手交易论坛—商品信息</title>

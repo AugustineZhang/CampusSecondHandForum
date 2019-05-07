@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:include page="common.jsp"/>
+
 <html>
 <head>
     <title>校园二手交易论坛——注册</title>
@@ -35,19 +37,23 @@
             font-size: 20px;
             font-family: 宋体;
         }
-        #body-nav input[type="text"]{
+
+        #body-nav input[type="text"] {
             width: 260px;
             line-height: 10px;
         }
-        #body-nav input[type="password"]{
+
+        #body-nav input[type="password"] {
             width: 260px;
             line-height: 10px;
         }
-        #body-nav input[type="radio"]{
+
+        #body-nav input[type="radio"] {
             width: 30px;
-            line-hight:10px;
+            line-hight: 10px;
         }
-        #body-nav input[type="submit"]{
+
+        #body-nav input[type="submit"] {
             width: 50px;
             line-height: 30px;
         }
@@ -58,7 +64,7 @@
     <h2><img src="../images/logo.jpg"/>校园二手交易论坛</h2>
 </div>
 <div id="body-nav">
-    <form  name="RegForm" action="RegServlet" method="post">
+    <form name="RegForm" action="RegServlet" method="post">
         <table>
             <tr>
                 <td>用户名：</td>
@@ -70,8 +76,8 @@
             </tr>
             <tr>
                 <td> 性别：</td>
-                <td><input type="radio" name="sex"  checked>男</td>
-                <td><input type="radio" name="sex" >女</td>
+                <td><input type="radio" name="sex" checked>男</td>
+                <td><input type="radio" name="sex">女</td>
             </tr>
             <tr>
                 <td>系别：</td>
@@ -84,13 +90,13 @@
             <tr>
                 <td> QQ：</td>
                 <td><input type="text" name="qq"></td>
-            </tr
+            </tr>
             <tr>
                 <td> 邮箱:</td>
                 <td><input type="text" name="email"></td>
             </tr>
             <tr>
-                <td><input type="button" name="upload" value="上传图片"  ></td>
+                <td><input type="button" name="upload" value="上传图片"></td>
                 <td><input type="submit" value="确定" onclick="check1()"></td>
             </tr>
 
@@ -99,26 +105,27 @@
     </form>
 </div>
 </body>
-<script  type="text/javascript">
+<script type="text/javascript">
     $(function () {
     })
+
     function check1() {
-     if (document.RegForm.username.value=="") {
-         alert("请输入用户名");
-         document.RegForm.username.focus();
-         return false;
-     }
-        if (document.RegForm.password.value=="") {
+        if (document.RegForm.username.value === "") {
+            alert("请输入用户名");
+            document.RegForm.username.focus();
+            return false;
+        }
+        if (document.RegForm.password.value === "") {
             alert("请输入密码");
             document.RegForm.password.focus();
             return false;
         }
-        if(document.RegForm.password.value.length<6){
+        if (document.RegForm.password.value.length < 6) {
             alert("密码长度至少为六位");
             document.RegForm.password.focus();
             return false;
         }
-        if(document.RegForm.tel.value.length<11){
+        if (document.RegForm.tel.value.length < 11) {
             alert("手机号码长度至少为11位");
             document.RegForm.tel.focus();
             return false;

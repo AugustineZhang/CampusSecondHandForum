@@ -1,9 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    String path = request.getContextPath();
-    String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-            + path + "/";
-%>
+<%@ page contentType="text/html;charset=UTF-8" %>
+<jsp:include page="common.jsp"/>
 <html>
 <head>
     <title>校园二手交易论坛</title>
@@ -137,12 +133,12 @@
         }
 
         function check() {
-            if (document.ThisForm.username.value == "") {
+            if (document.ThisForm.username.value === "") {
                 alert("请输入用户名");
                 document.ThisForm.username.focus();
                 return false;
             }
-            if (document.ThisForm.password.value == "") {
+            if (document.ThisForm.password.value === "") {
                 alert("请输入密码");
                 document.ThisForm.password.focus();
                 return false;
@@ -153,7 +149,7 @@
 </head>
 <body>
 <div id="header">
-    <h2><img src="${request.pageContext.contextPath}./images/logo.jpg"/>校园二手交易论坛</h2>
+    <h2><img src="${pageContext.request.contextPath}/images/logo.jpg"/>校园二手交易论坛</h2>
     <div id="login-nav">
         <input type="button" value="登录" onclick="openDialog()">
     </div>
