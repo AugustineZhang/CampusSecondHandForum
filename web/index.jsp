@@ -126,24 +126,28 @@
             document.getElementById('light').style.display = 'block';
             document.getElementById('fade').style.display = 'block'
         }
+
         function closeDialog() {
             document.getElementById('light').style.display = 'none';
             document.getElementById('fade').style.display = 'none'
         }
+
         function register() {
             window.location = "reg.jsp";
         }
+
         function check() {
-            if (document.ThisForm.username.value==""){
+            if (document.ThisForm.username.value == "") {
                 alert("请输入用户名");
                 document.ThisForm.username.focus();
                 return false;
             }
-            if (document.ThisForm.password.value==""){
+            if (document.ThisForm.password.value == "") {
                 alert("请输入密码");
                 document.ThisForm.password.focus();
                 return false;
             }
+            $("#ThisForm").submit();
         }
     </script>
 </head>
@@ -155,7 +159,7 @@
     </div>
 </div>
 <div id="light" class="white_content">
-    <form name="ThisForm" action="LoginServlet" method="post">
+    <form name="ThisForm" id="ThisForm" action="${pageContext.request.contextPath}/LoginServlet" method="get">
         <table>
             用户名：<input type="text" name="username"><br>
             密码：<input type="password" name="password"><br>
