@@ -8,13 +8,15 @@ public class Forum {
 
     private String startime;
 
-    private String newtime;
+    private String latesttime;
 
     private int num;
 
     private String remark;
 
     private boolean delFlag;
+
+    private int uid;
 
     public int getFid() {
         return fid;
@@ -40,13 +42,9 @@ public class Forum {
         this.startime = startime;
     }
 
-    public String getNewtime() {
-        return newtime;
-    }
+    public String getLatesttime() { return latesttime; }
 
-    public void setNewtime(String newtime) {
-        this.newtime = newtime;
-    }
+    public void setLatesttime(String latesttime) { this.latesttime = latesttime; }
 
     public int getNum() {
         return num;
@@ -71,4 +69,8 @@ public class Forum {
     public void setDelFlag(boolean delFlag) {
         this.delFlag = delFlag;
     }
+
+    public int getUid() { return uid; }
+
+    public void setUid(int uid) { this.uid = uid; }
 }

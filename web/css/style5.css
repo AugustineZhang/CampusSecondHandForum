@@ -1,0 +1,60 @@
+body {
+    text-align:left;
+    margin:0;
+    font:normal 12px Verdana, Arial;
+    background:#FFEEFF
+}
+form {
+    margin:0;
+    font:normal 12px Verdana, Arial;
+}
+table,input {
+    font:normal 12px Verdana, Arial;
+}
+a:link,a:visited{
+    text-decoration:none;
+    color:#333333;
+}
+a:hover{
+    text-decoration:none;
+    color:#FF6600
+}
+#main {
+    width:400px;
+    position:absolute;
+    left:600px;
+    top:100px;
+    background:#EFEFFF;
+    text-align:left;
+    filter:Alpha(opacity=90)
+}
+#ChatHead {
+    text-align:right;
+    padding:3px;
+    border:1px solid #003399;
+    background:#DCDCFF;
+    font-size:11px;
+    color:#3366FF;
+    cursor:move;
+}
+#ChatHead a:link,#ChatHead a:visited{
+    font-size:14px;
+    font-weight:bold;
+    padding:0 3px
+}
+#ChatBody {
+    border:1px solid #003399;
+    border-top:none;
+    padding:2px;
+}
+
+#ChatContent {
+    height:200px;
+    padding:6px;
+    overflow-y:scroll;
+    word-break: break-all
+}
+#ChatBtn {
+    border-top:1px solid #003399;
+    padding:2px
+}

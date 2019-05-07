@@ -2,8 +2,13 @@ package com.cshf.dao;
 
 import com.cshf.entity.Chat;
 import com.cshf.entity.User;
+import com.cshf.util.DbUtil;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ChatDAO {
 
@@ -23,6 +28,7 @@ public class ChatDAO {
         }
         return chat;
     }
+
 
 
 }

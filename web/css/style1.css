@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background: lavenderblush;
+}
+#header{
+    background: #DCDCFF;
+    margin: 0 auto;
+    height: 100px;
+}
+#header  h2{
+    font-size: 56px;
+    font-family: 华文楷体;
+    vertical-align:bottom;
+}
+#header img{
+    width: 66px;
+    hight:66px;
+    border-radius: 8px;
+}
+#login-nav{
+    position: absolute;
+    width: 70px;
+    text-align: center;
+    line-height: 26px;
+    left: 1166px;
+    top: 36px;
+    color: #31c27c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#login-nav input{
+    width: 50px;
+    hight:30px;
+}
+#two{
+     width: 100%;
+     height: 36px;
+     border: 3px solid lightskyblue;
+ }
+#two input{
+    text-indent: 6px;
+    width: 100px;
+    line-height: 36px;
+    font-size: 16px;
+}
+#content{
+    width: 100%;
+    height: 50%;
+    border: 3px solid lightskyblue;
+}
+#footer{
+    width: 600px;
+    height: 300px;
+    border: 3px solid lightskyblue;
+    background: lavenderblush;
+}
+#footer h1{
+    width: 50px;
+    border:2px solid #66fffd;
+    border-radius:5px;
+    font-size: large;
+    font-family: 宋体;
+}
+#footer input[type="text"]{
+    width: 300px;
+    hight:50px;
+}
+#footer input[type="button"]{
+    border-radius: 3px;
+    width: 50px;
+    line-height: 26px;
+
+}

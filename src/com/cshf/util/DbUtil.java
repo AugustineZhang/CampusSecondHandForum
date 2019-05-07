@@ -5,12 +5,13 @@ package com.cshf.util;
 
 import java.sql.*;
 import java.util.List;
+import java.sql.SQLException;
 
 public final class DbUtil {
 	private static final String dbUrl = "jdbc:mysql://localhost:3306/second_hand_forum?useUnicode=true&characterEncoding=UTF8&useSSL=true&allowMultiQueries=true";
 	private static final String dbDriver = "com.mysql.jdbc.Driver";
 	private static final String dbUser = "root";
-	private static final String dbPassword = "root";
+	private static final String dbPassword = "123";
 
 	public static Connection openNewConnection() {
 		Connection conn = null;
@@ -92,4 +93,6 @@ public final class DbUtil {
 				psmt.setObject(startIndex++, obj);
 		}
 	}
+
+
 }

@@ -4,6 +4,8 @@ public class User {
 
     private int uid;
 
+    private String uname;
+
     private String upwd;
 
     private String sex;
@@ -18,17 +20,16 @@ public class User {
 
     private String uimage;
 
-    private int fid;
-
     private boolean delFlag;
 
-    public int getUid() {
-        return uid;
-    }
 
-    public void setUid(int uid) {
-        this.uid = uid;
-    }
+    public int getUid() { return uid; }
+
+    public void setUid(int uid) { this.uid = uid; }
+
+    public String getUname() { return uname; }
+
+    public void setUname(String uname) { this.uname = uname; }
 
     public String getUpwd() {
         return upwd;
@@ -84,14 +85,6 @@ public class User {
 
     public void setUimage(String uimage) {
         this.uimage = uimage;
-    }
-
-    public int getFid() {
-        return fid;
-    }
-
-    public void setFid(int fid) {
-        this.fid = fid;
     }
 
     public boolean isDelFlag() {
